@@ -3,4 +3,8 @@
     <h1 class="caption_name">Takahiro Sono</h1>
     <h2 class="caption_pnd">planning and development</h2>
   </div>
+
+  <ul class="navbar">
+    <li *ngFor="let btn of btn_list" [class.selected]="btn === selectedBtn" (click)="onSelect(btn)">{{btn.name}}</li>
+  </ul>
 </div>

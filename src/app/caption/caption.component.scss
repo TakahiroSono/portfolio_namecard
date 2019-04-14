@@ -4,7 +4,7 @@
     background: linear-gradient(127.38deg, #FFFFFF -43.7%, rgba(255, 255, 255, 0) 64.35%), #008FFF;
     &_title{
         top: 30vh;
-        position: fixed;
+        position: relative;
         padding-left: 7%;
     }
     &_name{

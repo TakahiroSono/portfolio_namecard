@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Button } from '../caption/nav/button';
+import { Button } from './button';
+import { BTNS } from './profile-list-mock';
 
 @Component({
   selector: 'app-caption',
@@ -7,14 +8,14 @@ import { Button } from '../caption/nav/button';
   styleUrls: ['./caption.component.scss']
 })
 export class CaptionComponent implements OnInit {
-  btn_list: Button[] = [
-    {name: "profile", url: ""},
-    {name: "language", url: ""},
-    {name: "link", url: ""},
-  ]
+  btn_list: Button[] = BTNS;
+  selectedBtn: Button;
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSelect(btn: Button): void{
+    this.selectedBtn = btn;
+  }
 }
