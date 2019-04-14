@@ -5,6 +5,6 @@
   </div>
 
   <ul class="navbar">
-    <li *ngFor="let btn of btn_list" [class.selected]="btn === selectedBtn" (click)="onSelect(btn)">{{btn.name}}</li>
+    <li class="navbar_btn" *ngFor="let btn of btn_list" [class.selected]="btn === selectedBtn" (click)="onSelect(btn)"><img class="navbar_btn_image" src="{{btn.image}}"/></li>
   </ul>
 </div>
