@@ -7,7 +7,7 @@ import { CaptionComponent } from './caption/caption.component';
 import { ProfileComponent } from './information/profile/profile.component';
 import { LanguageComponent } from './information/language/language.component';
 import { LinkComponent } from './information/link/link.component';
-import { InfomationComponent } from './information/infomation.component';
+import { InformationComponent } from './information/information.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { InfomationComponent } from './information/infomation.component';
     ProfileComponent,
     LanguageComponent,
     LinkComponent,
-    InfomationComponent
+    InformationComponent
   ],
   imports: [
     BrowserModule,

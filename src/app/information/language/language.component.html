@@ -1,3 +1,8 @@
-<p>
-  language works!
-</p>
+<ul>
+  <li *ngFor="let language_item of language_list">
+    <img src="{{language_item.image}}" alt="{{language_item.name}}">
+    <h3>{{ language_item.name }}<h3>
+    <p>試用期間: {{ language_item.experience }}年</p>
+    <p>{{ language_item.note }}</p>
+  </li>
+</ul>
