@@ -8,7 +8,7 @@ import { LANGUAGE_LIST } from './language-mock';
   styleUrls: ['./language.component.scss']
 })
 export class LanguageComponent implements OnInit {
-  language_list: Language[] = LANGUAGE_LIST;
+  languages: Language[] = LANGUAGE_LIST;
   constructor() { }
 
   ngOnInit() {
