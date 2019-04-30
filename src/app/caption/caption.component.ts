@@ -9,7 +9,7 @@ import { BTNS } from './profile-list-mock';
 })
 export class CaptionComponent implements OnInit {
   btn_list: Button[] = BTNS;
-  selectedBtn: Button;
+  selectedBtn: Button = this.btn_list[0];
   constructor() { }
 
   ngOnInit() {
