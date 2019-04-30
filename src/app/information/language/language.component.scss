@@ -1,0 +1,29 @@
+.language{
+    padding-left: 10%;
+    overflow-y: scroll;
+    height: 100%;
+    &_card{
+        padding: 5% 0;
+        list-style: none;
+        &-image{
+            height: 134px;
+            width: 134px;
+        }
+        &-infomation{
+            padding-left: 5%;
+            display: inline-block;
+            height: 100%;
+        }
+        &-name{
+            font-size: 31px;
+        }
+        &-exp{
+            padding-top: 10px;
+            font-size: 17px;
+        }
+        &-note{
+            padding-top: 20px;
+            font-size: 21px;
+        }
+    }
+}
