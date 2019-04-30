@@ -5,6 +5,10 @@
   </div>
 
   <ul class="navbar">
-    <li class="navbar_btn" *ngFor="let btn of btn_list" [class.selected]="btn === selectedBtn" (click)="onSelect(btn)"><a routerLink="{{btn.url}}"><img class="navbar_btn_image" src="{{btn.image}}"/></a></li>
+    <li class="navbar_btn" *ngFor="let btn of btn_list" [class.selected]="btn === selectedBtn" (click)="onSelect(btn)">
+      <a class="navbar_btn-link" routerLink="{{btn.url}}">
+        <img class="navbar_btn_image" src="{{btn.image}}"/>
+      </a>
+    </li>
   </ul>
 </div>
