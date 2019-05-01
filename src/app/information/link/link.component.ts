@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Link } from './link';
+import { LINKLIST } from './linkList-mock';
 
 @Component({
   selector: 'app-link',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./link.component.scss']
 })
 export class LinkComponent implements OnInit {
-
+  links: Link[] = LINKLIST;
   constructor() { }
 
   ngOnInit() {
