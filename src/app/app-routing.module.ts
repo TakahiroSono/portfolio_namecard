@@ -5,7 +5,7 @@ import { LanguageComponent } from './information/language/language.component';
 import { LinkComponent } from './information/link/link.component';
 
 const routes: Routes = [
-  {path: '', component:ProfileComponent},
+  {path: '', redirectTo: '/profile', pathMatch: 'full'},
   {path: 'profile', component: ProfileComponent},
   {path: 'language', component: LanguageComponent},
   {path: 'link', component: LinkComponent}
