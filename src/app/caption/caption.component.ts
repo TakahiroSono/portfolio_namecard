@@ -9,13 +9,20 @@ import { BTNS } from './profile-list-mock';
 })
 export class CaptionComponent implements OnInit {
   btn_list: Button[] = BTNS;
-  selectedBtn: Button = this.btn_list[0];
+  selectedBtn: Button;
   constructor() { }
 
   ngOnInit() {
+    this.getInitilizeBtn()
   }
 
   onSelect(btn: Button): void{
     this.selectedBtn = btn;
+  }
+
+  getInitilizeBtn(){
+    this.selectedBtn = this.btn_list.find((btn) => {
+      return (btn.name === window.location.pathname.slice(1))
+    })
   }
 }
