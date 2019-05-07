@@ -1,0 +1,46 @@
+.title{
+    font-size: 41px;
+    padding-bottom: 10px;
+}
+
+.base_layout{
+    display: block;
+    padding-left: 10%;
+    position: relative;
+}
+
+.item{
+    font-size: 30px;
+}
+
+.history{
+    @extend .base_layout;
+    padding-top: 20vh;
+    &_title{
+        @extend .title;
+    }
+    &_log{
+        &-item{
+            @extend .item;
+            padding: 10px 0;
+            &_year{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.favorite{
+    @extend .base_layout;
+    padding-top: 15vh;
+    &_title{
+        @extend .title;
+    }
+    &_list{
+        @extend .item;
+        padding-left: 5%;
+        &-item{
+            padding-top: 2%;
+        }
+    }
+}

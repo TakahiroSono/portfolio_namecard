@@ -1,0 +1,14 @@
+<div class="caption">
+  <div class="caption_title">
+    <h1 class="caption_name">Takahiro Sono</h1>
+    <h2 class="caption_pnd">planning and development</h2>
+  </div>
+
+  <ul class="navbar">
+    <li class="navbar_btn" *ngFor="let btn of btn_list" [class.selected]="btn === selectedBtn" (click)="onSelect(btn)">
+      <a class="navbar_btn-link" routerLink="{{btn.url}}">
+        <img class="navbar_btn_image" src="{{btn.image}}"/>
+      </a>
+    </li>
+  </ul>
+</div>
