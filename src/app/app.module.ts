@@ -8,6 +8,7 @@ import { ProfileComponent } from './information/profile/profile.component';
 import { LanguageComponent } from './information/language/language.component';
 import { LinkComponent } from './information/link/link.component';
 import { InformationComponent } from './information/information.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { InformationComponent } from './information/information.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
