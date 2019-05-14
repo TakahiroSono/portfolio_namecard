@@ -21,8 +21,9 @@ export class CaptionComponent implements OnInit {
   }
 
   getInitilizeBtn(){
+    const init_url = window.location.pathname.slice(1) || 'profile';
     this.selectedBtn = this.btn_list.find((btn) => {
-      return (btn.name === window.location.pathname.slice(1))
-    })
+      return (btn.name === init_url)
+    });
   }
 }
